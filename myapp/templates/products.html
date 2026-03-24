@@ -12,7 +12,7 @@
 
      <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 navbar-custom">
   <div class="container-fluid px-0">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="{% url 'index' %}">
       <span class="d-flex flex-column text-uppercase text-xs fw-bold lh-sm">
       <span class="" style="letter-spacing: .12rem;">Furnish</span>
       <span>Template</span>
@@ -21,21 +21,21 @@
     <div class="mx-auto  d-lg-block d-none">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
+          <a class="nav-link" href="{% url 'about' %}">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link" href="{% url 'products' %}">Products</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="testimonials.html">Testimonials</a>
+          <a class="nav-link" href="{% url 'testimonials' %}">Testimonials</a>
         </li>
          
 
         <li class="nav-item">
-          <a class="nav-link " href="contact.html" >Contact</a>
+          <a class="nav-link " href="{% url 'contact' %}" >Contact</a>
         </li>
       </ul>
       </div>
@@ -143,7 +143,7 @@
           <!-- Repeat Product Card -->
           <div class="col-sm-6 col-md-4">
             <div class="card product-card">
-              <a href="#"><img src="./assets/images/product-img-1.jpg" class="card-img-top" alt="Product Name"></a>
+              <a href="#"><img src="assets/images/product-img-1.jpg" class="card-img-top" alt="Product Name"></a>
               <div class="card-body">
                  <p class="text-muted mb-2 text-uppercase text-xs mb-3">Brand</p>
                   <div class="mb-3">
@@ -159,7 +159,7 @@
             </div>
           </div>   <div class="col-sm-6 col-md-4">
             <div class="card product-card">
-              <a href="#"><img src="./assets/images/product-img-2.jpg" class="card-img-top" alt="Product Name"></a>
+              <a href="#"><img src="assets/images/product-img-2.jpg" class="card-img-top" alt="Product Name"></a>
               <div class="card-body">
                  <p class="text-muted mb-2 text-uppercase text-xs mb-3">Brand</p>
                   <div class="mb-3">
@@ -177,7 +177,7 @@
           <!-- /Repeat -->
             <div class="col-sm-6 col-md-4">
             <div class="card product-card">
-              <a href="#"><img src="./assets/images/product-img-5.jpg" class="card-img-top" alt="Product Name"></a>
+              <a href="#"><img src="assets/images/product-img-5.jpg" class="card-img-top" alt="Product Name"></a>
               <div class="card-body">
                  <p class="text-muted mb-2 text-uppercase text-xs mb-3">Brand</p>
                   <div class="mb-3">
@@ -194,7 +194,7 @@
           </div>
                 <div class="col-sm-6 col-md-4">
             <div class="card product-card">
-              <a href="#"><img src="./assets/images/product-img-6.jpg" class="card-img-top" alt="Product Name"></a>
+              <a href="#"><img src="assets/images/product-img-6.jpg" class="card-img-top" alt="Product Name"></a>
               <div class="card-body">
                  <p class="text-muted mb-2 text-uppercase text-xs mb-3">Brand</p>
                   <div class="mb-3">
@@ -210,7 +210,7 @@
             </div>
           </div>   <div class="col-sm-6 col-md-4">
             <div class="card product-card">
-              <a href="#"><img src="./assets/images/product-img-3.jpg" class="card-img-top" alt="Product Name"></a>
+              <a href="#"><img src="assets/images/product-img-3.jpg" class="card-img-top" alt="Product Name"></a>
               <div class="card-body">
                  <p class="text-muted mb-2 text-uppercase text-xs mb-3">Brand</p>
                   <div class="mb-3">
@@ -228,7 +228,7 @@
           <!-- /Repeat -->
             <div class="col-sm-6 col-md-4">
             <div class="card product-card">
-              <a href="#"><img src="./assets/images/product-img-7.jpg" class="card-img-top" alt="Product Name"></a>
+              <a href="#"><img src="assets/images/product-img-7.jpg" class="card-img-top" alt="Product Name"></a>
               <div class="card-body">
                  <p class="text-muted mb-2 text-uppercase text-xs mb-3">Brand</p>
                   <div class="mb-3">
@@ -340,27 +340,27 @@
     <div class="navbar-custom">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
+          <a class="nav-link" href="{% url 'about' %}">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link" href="{% url 'products' %}">Products</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="testimonials.html">Testimonials</a>
+          <a class="nav-link" href="{% url 'testimonials' %}">Testimonials</a>
         </li>
          
 
         <li class="nav-item">
-          <a class="nav-link " href="contact.html" >Contact</a>
+          <a class="nav-link " href="{% url 'contact' %}">Contact</a>
         </li>
       </ul>
       </div>
   </div>
 </div>
 
-    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
